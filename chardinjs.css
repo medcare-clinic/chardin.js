@@ -1,6 +1,6 @@
 .chardinjs-overlay {
   position: absolute;
-  z-index: 999999;
+  z-index: 999990;
   background-color: #000;
   opacity: 0;
   -webkit-transition: all 0.3s ease-out;
@@ -19,16 +19,16 @@
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
   .chardinjs-helper-layer.chardinjs-left {
-    border-left: solid white 1px;
+    border-left: solid #999999 1px;
     margin-left: -10px; }
   .chardinjs-helper-layer.chardinjs-right {
-    border-right: solid white 1px;
+    border-right: solid #999999 1px;
     padding-right: 10px; }
   .chardinjs-helper-layer.chardinjs-bottom {
-    border-bottom: solid white 1px;
+    border-bottom: solid #999999 1px;
     padding-bottom: 10px; }
   .chardinjs-helper-layer.chardinjs-top {
-    border-top: solid white 1px;
+    border-top: solid #999999 1px;
     padding-top: 10px; }
 
 .chardinjs-tooltip {
@@ -54,7 +54,7 @@
   .chardinjs-tooltip.chardinjs-right:before, .chardinjs-tooltip.chardinjs-left:after, .chardinjs-tooltip.chardinjs-bottom:before, .chardinjs-tooltip.chardinjs-top:after {
     content: ".";
     display: inline-block;
-    background-color: white;
+    background-color: #999999;
     height: 1px;
     overflow: hidden;
     position: absolute; }
