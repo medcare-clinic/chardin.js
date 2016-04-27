@@ -73,7 +73,7 @@
       };
 
       chardinJs.prototype._add_overlay_layer = function() {
-        var element_position, overlay_layer, styleText;
+        var element_position, opacity, overlay_layer, styleText;
         if (this._overlay_visible()) {
           return false;
         }
@@ -96,8 +96,9 @@
             return _this.stop();
           };
         })(this);
+        opacity = 6;
         return setTimeout(function() {
-          styleText += "opacity: .8;opacity: .8;-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=80)';filter: alpha(opacity=80);";
+          styleText += "opacity: ." + opacity + ";opacity: ." + opacity + ";-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=" + (opacity * 10) + ")';filter: alpha(opacity=" + (opacity * 10) + ");";
           return overlay_layer.setAttribute("style", styleText);
         }, 10);
       };
