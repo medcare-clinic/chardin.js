@@ -62,7 +62,7 @@ do ($ = window.jQuery, window) ->
 
       overlay_layer.onclick = => @.stop()
 
-      opacity = 6
+      opacity = 75
       setTimeout ->
         styleText += "opacity: .#{opacity};opacity: .#{opacity};-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=#{opacity*10})';filter: alpha(opacity=#{opacity*10});"
         overlay_layer.setAttribute "style", styleText

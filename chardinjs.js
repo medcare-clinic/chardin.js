@@ -96,7 +96,7 @@
             return _this.stop();
           };
         })(this);
-        opacity = 6;
+        opacity = 75;
         return setTimeout(function() {
           styleText += "opacity: ." + opacity + ";opacity: ." + opacity + ";-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=" + (opacity * 10) + ")';filter: alpha(opacity=" + (opacity * 10) + ");";
           return overlay_layer.setAttribute("style", styleText);
